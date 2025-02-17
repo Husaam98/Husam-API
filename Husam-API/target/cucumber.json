@@ -1,0 +1,1937 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 115864,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Retrieve Secure API using GET one",
+        "description": "",
+        "id": "beam-core-api-cases;retrieve-secure-api-using-get-one",
+        "after": [
+          {
+            "result": {
+              "duration": 84731,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1644605631,
+              "error_message": "org.json.JSONException: A JSONArray text must start with \u0027[\u0027 at character 1\n\tat org.json.JSONTokener.syntaxError(JSONTokener.java:410)\n\tat org.json.JSONArray.\u003cinit\u003e(JSONArray.java:113)\n\tat org.json.JSONArray.\u003cinit\u003e(JSONArray.java:157)\n\tat com.gitHub.automation.steps.GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsWithoutQueryParameters(GitHubJobsAPIStepDef.java:54)\n\tat ✽.When Send the API call GET http://core.api.stg.beamwallet.me/trusted-application-api/v1/secure/settings without query parameters(BeamCoreAPI.feature:4)\n",
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "Send the API call GET http://core.api.stg.beamwallet.me/trusted-application-api/v1/secure/settings without query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://core.api.stg.beamwallet.me/trusted-application-api/v1/secure/settings",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsWithoutQueryParameters(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Beam Core API Cases",
+    "description": "",
+    "id": "beam-core-api-cases",
+    "keyword": "Feature",
+    "uri": "BeamCoreAPI.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 77374,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Retrieve all Jobs using GET API contain Valid Description",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 73859,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2133440363,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?description\u003dQA"
+            }
+          },
+          {
+            "result": {
+              "duration": 2739847,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 115667,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Retrieve all Jobs using GET API contain Empty Description",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 53634,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2098437872,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?description\u003d"
+            }
+          },
+          {
+            "result": {
+              "duration": 57335,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 64830,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "Retrieve all Jobs using GET API contain Ruby Description",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 44477,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1809097828,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?description\u003druby"
+            }
+          },
+          {
+            "result": {
+              "duration": 53998,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 72099,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Retrieve all Jobs using GET API contain Valid Description",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 36051,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2093551665,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?description\u003djava"
+            }
+          },
+          {
+            "result": {
+              "duration": 45274,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 56680,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Retrieve all Jobs using GET API contain Valid location",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 57974,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1381289474,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?location\u003dSan Francisco"
+            }
+          },
+          {
+            "result": {
+              "duration": 57545,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 66669,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Retrieve all Jobs using GET API contain Valid location and Lat/Long",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 43659,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1255855269,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?location\u003dSan Francisco\u0026lat\u003d37.3229978\u0026long\u003d-122.0321823"
+            }
+          },
+          {
+            "result": {
+              "duration": 43953,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 81620,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Retrieve all Jobs using GET API contain Valid location and Full Time",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;8",
+        "after": [
+          {
+            "result": {
+              "duration": 37336,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1321554208,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?location\u003dSan Francisco\u0026full_time\u003dtrue"
+            }
+          },
+          {
+            "result": {
+              "duration": 40459,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 79114,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Retrieve all Jobs using GET API contain Valid location have Zip code",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;9",
+        "after": [
+          {
+            "result": {
+              "duration": 53988,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2161414154,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?location\u003d10106"
+            }
+          },
+          {
+            "result": {
+              "duration": 45306,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 117134,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Retrieve all Jobs using GET API contain Valid Description and location",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;10",
+        "after": [
+          {
+            "result": {
+              "duration": 37455,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1059076263,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?location\u003dSan Francisco\u0026description\u003druby"
+            }
+          },
+          {
+            "result": {
+              "duration": 43810,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 61940,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Retrieve all Jobs using GET API contain Valid Lat and Long",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;11",
+        "after": [
+          {
+            "result": {
+              "duration": 61531,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1390392263,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?lat\u003d37.3229978\u0026long\u003d-122.0321823"
+            }
+          },
+          {
+            "result": {
+              "duration": 46170,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 79608,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Retrieve all Jobs using GET API contain Valid Description, location and Lat/Long",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;12",
+        "after": [
+          {
+            "result": {
+              "duration": 36034,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1046754619,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?location\u003dSan Francisco\u0026description\u003druby\u0026lat\u003d37.3229978\u0026long\u003d-122.0321823"
+            }
+          },
+          {
+            "result": {
+              "duration": 47342,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 56319,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Retrieve all Jobs using GET API contain Full Time",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;13",
+        "after": [
+          {
+            "result": {
+              "duration": 41254,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2172523773,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?full_time\u003dtrue"
+            }
+          },
+          {
+            "result": {
+              "duration": 77487,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 163043,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Retrieve all Jobs using GET API contain Full Time and Lat/Long",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;14",
+        "after": [
+          {
+            "result": {
+              "duration": 35879,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1339011548,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?full_time\u003dtrue\u0026lat\u003d37.3229978\u0026long\u003d-122.0321823"
+            }
+          },
+          {
+            "result": {
+              "duration": 40022,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 56809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Retrieve all Jobs using GET API contain Valid Description, location, Lat/Long and Full Time True",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;15",
+        "after": [
+          {
+            "result": {
+              "duration": 32726,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 969491199,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?location\u003dSan Francisco\u0026description\u003druby\u0026lat\u003d37.3229978\u0026long\u003d-122.0321823\u0026full_time\u003dtrue"
+            }
+          },
+          {
+            "result": {
+              "duration": 32541,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 302156,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 27,
+        "name": "Retrieve all Jobs using GET API contain Valid Description, Lat/Long and Full Time True",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;16",
+        "after": [
+          {
+            "result": {
+              "duration": 339603,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1086238515,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?description\u003druby\u0026lat\u003d37.3229978\u0026long\u003d-122.0321823\u0026full_time\u003dtrue"
+            }
+          },
+          {
+            "result": {
+              "duration": 35242,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 55370,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 28,
+        "name": "Retrieve all Jobs using GET API contain Valid Description, location and Full Time True",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;17",
+        "after": [
+          {
+            "result": {
+              "duration": 50454,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 985197703,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?location\u003dSan Francisco\u0026description\u003druby\u0026full_time\u003dtrue"
+            }
+          },
+          {
+            "result": {
+              "duration": 315208,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 52809,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Retrieve all Jobs using GET API contain Description and Lat/Long",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;18",
+        "after": [
+          {
+            "result": {
+              "duration": 27677,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 848910510,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?description\u003dQA\u0026long\u003d10\u0026lat\u003d10"
+            }
+          },
+          {
+            "result": {
+              "duration": 40899,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 118127,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Retrieve all Jobs using GET API contain Description and Full Time True",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e;;19",
+        "after": [
+          {
+            "result": {
+              "duration": 34018,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1493737219,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 6,
+              "value": "?description\u003dQA\u0026full_time\u003dtrue"
+            }
+          },
+          {
+            "result": {
+              "duration": 38187,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Should received success response with status code 200.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 44770,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Retrieve all Jobs using GET API To verify the Jobs number in First Page",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-to-verify-the-jobs-number-in-\u003cscenarioname\u003e;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 30403,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2165108480,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 35,
+              "value": "?page\u003d0"
+            }
+          },
+          {
+            "result": {
+              "duration": 109029,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Should receive number of Jobs 50 per page.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.ShouldReceivedNumberOfJobsPerPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 48033,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 43,
+        "name": "Retrieve all Jobs using GET API To verify the Jobs number in Second Page",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-to-verify-the-jobs-number-in-\u003cscenarioname\u003e;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 32836,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2034866821,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 35,
+              "value": "?page\u003d1"
+            }
+          },
+          {
+            "result": {
+              "duration": 50378,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Should receive number of Jobs 50 per page.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.ShouldReceivedNumberOfJobsPerPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 63889,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 44,
+        "name": "Retrieve all Jobs using GET API To verify the Jobs number in Third Page",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-to-verify-the-jobs-number-in-\u003cscenarioname\u003e;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 22775,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2062551445,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 35,
+              "value": "?page\u003d2"
+            }
+          },
+          {
+            "result": {
+              "duration": 58775,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Should receive number of Jobs 50 per page.",
+            "match": {
+              "location": "GitHubJobsAPIStepDef.ShouldReceivedNumberOfJobsPerPage()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 62219,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 56,
+        "name": "Retrieve all Jobs using GET API contain Specific Description To verify the result if it have the expected jobs",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e-to-verify-the-result-if-it-have-the-expected-jobs;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 32518,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2006468722,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 49,
+              "value": "?description\u003dtest"
+            }
+          },
+          {
+            "result": {
+              "duration": 9118162,
+              "error_message": "java.lang.AssertionError: The following asserts failed:\nWe can\u0027t found [test] in the description in Job number 22\n, We can\u0027t found [test] in the description in Job number 24\n, We can\u0027t found [test] in the description in Job number 27\n\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)\n\tat com.gitHub.automation.steps.GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(GitHubJobsAPIStepDef.java:82)\n\tat ✽.Then Should received description have test.(GitHubJobsAPI.feature:52)\n",
+              "status": "failed"
+            },
+            "line": 52,
+            "name": "Should received description have test.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test",
+                  "offset": 33
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 61938,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 57,
+        "name": "Retrieve all Jobs using GET API contain Valid Description To verify the result if it have the expected jobs",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e-to-verify-the-result-if-it-have-the-expected-jobs;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 25852,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2096919667,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 49,
+              "value": "?description\u003dJava"
+            }
+          },
+          {
+            "result": {
+              "duration": 7839632,
+              "error_message": "java.lang.AssertionError: The following asserts failed:\nWe can\u0027t found [Java] in the description in Job number 2\n\n\tat org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)\n\tat com.gitHub.automation.steps.GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(GitHubJobsAPIStepDef.java:82)\n\tat ✽.Then Should received description have Java.(GitHubJobsAPI.feature:52)\n",
+              "status": "failed"
+            },
+            "line": 52,
+            "name": "Should received description have Java.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Java",
+                  "offset": 33
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 42957,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 58,
+        "name": "Retrieve all Jobs using GET API contain Invalid Description To verify the result if it have the expected jobs",
+        "description": "",
+        "id": "list-of-api-cases;retrieve-all-jobs-using-get-api-contain-\u003cscenarioname\u003e-to-verify-the-result-if-it-have-the-expected-jobs;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 27034,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 836057374,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://jobs.github.com/positions.json",
+                  "offset": 22
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When ",
+            "doc_string": {
+              "content_type": "",
+              "line": 49,
+              "value": "?description\u003dhussein"
+            }
+          },
+          {
+            "result": {
+              "duration": 137466,
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "Should received description have hussein.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "hussein",
+                  "offset": 33
+                }
+              ],
+              "location": "GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 46,
+            "name": "@Git_Hub-Fast"
+          }
+        ]
+      }
+    ],
+    "name": "List of API Cases",
+    "description": "",
+    "id": "list-of-api-cases",
+    "keyword": "Feature",
+    "uri": "GitHubJobsAPI.feature"
+  }
+]

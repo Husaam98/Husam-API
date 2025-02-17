@@ -1,0 +1,242 @@
+[
+  {
+    "source": "^Should received description have ([^\"]*).$",
+    "steps": [
+      {
+        "name": "Should received description have hussein.",
+        "aggregatedDurations": {
+          "average": 0.000137466,
+          "median": 0.000137466
+        },
+        "durations": [
+          {
+            "duration": 0.000137466,
+            "location": "GitHubJobsAPI.feature:52"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Send the API call GET ([^\"]*) with query parameters$",
+    "steps": [
+      {
+        "name": "Send the API call GET https://jobs.github.com/positions.json with query parameters",
+        "aggregatedDurations": {
+          "average": 1.576997789,
+          "median": 1.442064741
+        },
+        "durations": [
+          {
+            "duration": 2.133440363,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 2.098437872,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.809097828,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 2.093551665,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.381289474,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.255855269,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.321554208,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 2.161414154,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.059076263,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.390392263,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.046754619,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 2.172523773,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.339011548,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 0.969491199,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.086238515,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 0.985197703,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 0.84891051,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 1.493737219,
+            "location": "GitHubJobsAPI.feature:5"
+          },
+          {
+            "duration": 2.16510848,
+            "location": "GitHubJobsAPI.feature:34"
+          },
+          {
+            "duration": 2.034866821,
+            "location": "GitHubJobsAPI.feature:34"
+          },
+          {
+            "duration": 2.062551445,
+            "location": "GitHubJobsAPI.feature:34"
+          },
+          {
+            "duration": 2.006468722,
+            "location": "GitHubJobsAPI.feature:48"
+          },
+          {
+            "duration": 2.096919667,
+            "location": "GitHubJobsAPI.feature:48"
+          },
+          {
+            "duration": 0.836057374,
+            "location": "GitHubJobsAPI.feature:48"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Should receive number of Jobs 50 per page.$",
+    "steps": [
+      {
+        "name": "Should receive number of Jobs 50 per page.",
+        "aggregatedDurations": {
+          "average": 0.000072727,
+          "median": 0.000058775
+        },
+        "durations": [
+          {
+            "duration": 0.000109029,
+            "location": "GitHubJobsAPI.feature:38"
+          },
+          {
+            "duration": 0.000050378,
+            "location": "GitHubJobsAPI.feature:38"
+          },
+          {
+            "duration": 0.000058775,
+            "location": "GitHubJobsAPI.feature:38"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^Should received success response with status code 200.$",
+    "steps": [
+      {
+        "name": "Should received success response with status code 200.",
+        "aggregatedDurations": {
+          "average": 0.000211145,
+          "median": 0.00004529
+        },
+        "durations": [
+          {
+            "duration": 0.002739847,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000057335,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000053998,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000045274,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000057545,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000043953,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000040459,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000045306,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.00004381,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.00004617,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000047342,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000077487,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000040022,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000032541,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000035242,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000315208,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000040899,
+            "location": "GitHubJobsAPI.feature:9"
+          },
+          {
+            "duration": 0.000038187,
+            "location": "GitHubJobsAPI.feature:9"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,251 @@
+Feature: Beam Core API Cases
+
+  Scenario: Retrieve Secure API using GET one                                                                                        [90m# BeamCoreAPI.feature:3[0m
+    [31mWhen [0m[31mSend the API call GET [0m[31m[1mhttp://core.api.stg.beamwallet.me/trusted-application-api/v1/secure/settings[0m[31m without query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsWithoutQueryParameters(String)[0m
+      [31morg.json.JSONException: A JSONArray text must start with '[' at character 1
+      	at org.json.JSONTokener.syntaxError(JSONTokener.java:410)
+      	at org.json.JSONArray.<init>(JSONArray.java:113)
+      	at org.json.JSONArray.<init>(JSONArray.java:157)
+      	at com.gitHub.automation.steps.GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsWithoutQueryParameters(GitHubJobsAPIStepDef.java:54)
+      	at ✽.When Send the API call GET http://core.api.stg.beamwallet.me/trusted-application-api/v1/secure/settings without query parameters(BeamCoreAPI.feature:4)
+      [0m
+    [36mThen [0m[36mShould received success response with status code 200.[0m                                                                      [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+Feature: List of API Cases
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain <scenarioName>                  [90m# GitHubJobsAPI.feature:4[0m
+    [36mWhen [0m[36mSend the API call GET https://jobs.github.com/positions.json with query parameters[0m
+      """
+      <url>
+      """
+    [36mThen [0m[36mShould received success response with status code 200.[0m
+
+    Examples: 
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid Description               [90m# GitHubJobsAPI.feature:13[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=QA
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Empty Description               [90m# GitHubJobsAPI.feature:14[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Ruby Description                [90m# GitHubJobsAPI.feature:15[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=ruby
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid Description               [90m# GitHubJobsAPI.feature:16[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=java
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid location                  [90m# GitHubJobsAPI.feature:17[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?location=San Francisco
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid location and Lat/Long     [90m# GitHubJobsAPI.feature:18[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?location=San Francisco&lat=37.3229978&long=-122.0321823
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid location and Full Time    [90m# GitHubJobsAPI.feature:19[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?location=San Francisco&full_time=true
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid location have Zip code    [90m# GitHubJobsAPI.feature:20[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?location=10106
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid Description and location  [90m# GitHubJobsAPI.feature:21[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?location=San Francisco&description=ruby
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid Lat and Long              [90m# GitHubJobsAPI.feature:22[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?lat=37.3229978&long=-122.0321823
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid Description, location and Lat/Long [90m# GitHubJobsAPI.feature:23[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m          [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?location=San Francisco&description=ruby&lat=37.3229978&long=-122.0321823
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                                      [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Full Time                       [90m# GitHubJobsAPI.feature:24[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?full_time=true
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Full Time and Lat/Long          [90m# GitHubJobsAPI.feature:25[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?full_time=true&lat=37.3229978&long=-122.0321823
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid Description, location, Lat/Long and Full Time True [90m# GitHubJobsAPI.feature:26[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m                          [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?location=San Francisco&description=ruby&lat=37.3229978&long=-122.0321823&full_time=true
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                                                      [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid Description, Lat/Long and Full Time True [90m# GitHubJobsAPI.feature:27[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m                [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=ruby&lat=37.3229978&long=-122.0321823&full_time=true
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                                            [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid Description, location and Full Time True [90m# GitHubJobsAPI.feature:28[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m                [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?location=San Francisco&description=ruby&full_time=true
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                                            [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Description and Lat/Long        [90m# GitHubJobsAPI.feature:29[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=QA&long=10&lat=10
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Description and Full Time True  [90m# GitHubJobsAPI.feature:30[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=QA&full_time=true
+      """
+    [32mThen [0m[32mShould received success response with status code 200.[0m                             [90m# GitHubJobsAPIStepDef.IShouldReceivedResponseWithStatusCode()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API To verify the Jobs number in <scenarioName> [90m# GitHubJobsAPI.feature:33[0m
+    [36mWhen [0m[36mSend the API call GET https://jobs.github.com/positions.json with query parameters[0m
+      """
+      <url>
+      """
+    [36mThen [0m[36mShould receive number of Jobs 50 per page.[0m
+
+    Examples: 
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API To verify the Jobs number in First Page [90m# GitHubJobsAPI.feature:42[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?page=0
+      """
+    [32mThen [0m[32mShould receive number of Jobs 50 per page.[0m                                         [90m# GitHubJobsAPIStepDef.ShouldReceivedNumberOfJobsPerPage()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API To verify the Jobs number in Second Page [90m# GitHubJobsAPI.feature:43[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m  [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?page=1
+      """
+    [32mThen [0m[32mShould receive number of Jobs 50 per page.[0m                                          [90m# GitHubJobsAPIStepDef.ShouldReceivedNumberOfJobsPerPage()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API To verify the Jobs number in Third Page [90m# GitHubJobsAPI.feature:44[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?page=2
+      """
+    [32mThen [0m[32mShould receive number of Jobs 50 per page.[0m                                         [90m# GitHubJobsAPIStepDef.ShouldReceivedNumberOfJobsPerPage()[0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain <scenarioName> To verify the result if it have the expected jobs [90m# GitHubJobsAPI.feature:47[0m
+    [36mWhen [0m[36mSend the API call GET https://jobs.github.com/positions.json with query parameters[0m
+      """
+      <url>
+      """
+    [36mThen [0m[36mShould received description have <description>.[0m
+
+    Examples: 
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Specific Description To verify the result if it have the expected jobs [90m# GitHubJobsAPI.feature:56[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m                                        [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=test
+      """
+    [31mThen [0m[31mShould received description have [0m[31m[1mtest[0m[31m.[0m                                                                                    [90m# GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(String)[0m
+      [31mjava.lang.AssertionError: The following asserts failed:
+      We can't found [test] in the description in Job number 22
+      , We can't found [test] in the description in Job number 24
+      , We can't found [test] in the description in Job number 27
+      
+      	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+      	at com.gitHub.automation.steps.GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(GitHubJobsAPIStepDef.java:82)
+      	at ✽.Then Should received description have test.(GitHubJobsAPI.feature:52)
+      [0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Valid Description To verify the result if it have the expected jobs [90m# GitHubJobsAPI.feature:57[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m                                     [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=Java
+      """
+    [31mThen [0m[31mShould received description have [0m[31m[1mJava[0m[31m.[0m                                                                                 [90m# GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(String)[0m
+      [31mjava.lang.AssertionError: The following asserts failed:
+      We can't found [Java] in the description in Job number 2
+      
+      	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+      	at com.gitHub.automation.steps.GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(GitHubJobsAPIStepDef.java:82)
+      	at ✽.Then Should received description have Java.(GitHubJobsAPI.feature:52)
+      [0m
+
+  @Git_Hub-Fast
+  Scenario Outline: Retrieve all Jobs using GET API contain Invalid Description To verify the result if it have the expected jobs [90m# GitHubJobsAPI.feature:58[0m
+    [32mWhen [0m[32mSend the API call GET [0m[32m[1mhttps://jobs.github.com/positions.json[0m[32m with query parameters[0m                                       [90m# GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsJobsGithubComPositionsJsonWithQueryParameters(String,String)[0m
+      """
+      ?description=hussein
+      """
+    [32mThen [0m[32mShould received description have [0m[32m[1mhussein[0m[32m.[0m                                                                                [90m# GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(String)[0m

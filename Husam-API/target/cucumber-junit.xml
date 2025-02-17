@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="3" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="25" time="39.517141">
+<testcase classname="Beam Core API Cases" name="Retrieve Secure API using GET one" time="1.644806">
+<failure message="org.json.JSONException: A JSONArray text must start with '[' at character 1&#10;&#9;at org.json.JSONTokener.syntaxError(JSONTokener.java:410)&#10;&#9;at org.json.JSONArray.&lt;init&gt;(JSONArray.java:113)&#10;&#9;at org.json.JSONArray.&lt;init&gt;(JSONArray.java:157)&#10;&#9;at com.gitHub.automation.steps.GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsWithoutQueryParameters(GitHubJobsAPIStepDef.java:54)&#10;&#9;at ✽.When Send the API call GET http://core.api.stg.beamwallet.me/trusted-application-api/v1/secure/settings without query parameters(BeamCoreAPI.feature:4)&#10;"><![CDATA[When Send the API call GET http://core.api.stg.beamwallet.me/trusted-application-api/v1/secure/settings without query parameters.failed
+Then Should received success response with status code 200..................skipped
+
+StackTrace:
+org.json.JSONException: A JSONArray text must start with '[' at character 1
+	at org.json.JSONTokener.syntaxError(JSONTokener.java:410)
+	at org.json.JSONArray.<init>(JSONArray.java:113)
+	at org.json.JSONArray.<init>(JSONArray.java:157)
+	at com.gitHub.automation.steps.GitHubJobsAPIStepDef.iSendTheAPICallGETHttpsWithoutQueryParameters(GitHubJobsAPIStepDef.java:54)
+	at ✽.When Send the API call GET http://core.api.stg.beamwallet.me/trusted-application-api/v1/secure/settings without query parameters(BeamCoreAPI.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid Description" time="2.136331">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Empty Description" time="2.098665">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Ruby Description" time="1.809261">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid Description" time="2.093705">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid location" time="1.381462">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid location and Lat/Long" time="1.25601">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid location and Full Time" time="1.321714">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid location have Zip code" time="2.161593">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid Description and location" time="1.059275">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid Lat and Long" time="1.390562">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid Description, location and Lat/Long" time="1.046918">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Full Time" time="2.172699">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Full Time and Lat/Long" time="1.33925">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid Description, location, Lat/Long and Full Time True" time="0.969613">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid Description, Lat/Long and Full Time True" time="1.086916">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid Description, location and Full Time True" time="0.985619">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Description and Lat/Long" time="0.849032">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Description and Full Time True" time="1.493928">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received success response with status code 200..................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API To verify the Jobs number in First Page" time="2.165293">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should receive number of Jobs 50 per page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API To verify the Jobs number in Second Page" time="2.034998">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should receive number of Jobs 50 per page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API To verify the Jobs number in Third Page" time="2.062697">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should receive number of Jobs 50 per page..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Specific Description To verify the result if it have the expected jobs" time="2.015682">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;We can't found [test] in the description in Job number 22&#10;, We can't found [test] in the description in Job number 24&#10;, We can't found [test] in the description in Job number 27&#10;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)&#10;&#9;at com.gitHub.automation.steps.GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(GitHubJobsAPIStepDef.java:82)&#10;&#9;at ✽.Then Should received description have test.(GitHubJobsAPI.feature:52)&#10;"><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received description have test..................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+We can't found [test] in the description in Job number 22
+, We can't found [test] in the description in Job number 24
+, We can't found [test] in the description in Job number 27
+
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at com.gitHub.automation.steps.GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(GitHubJobsAPIStepDef.java:82)
+	at ✽.Then Should received description have test.(GitHubJobsAPI.feature:52)
+]]></failure>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Valid Description To verify the result if it have the expected jobs" time="2.104847">
+<failure message="java.lang.AssertionError: The following asserts failed:&#10;We can't found [Java] in the description in Job number 2&#10;&#10;&#9;at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)&#10;&#9;at com.gitHub.automation.steps.GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(GitHubJobsAPIStepDef.java:82)&#10;&#9;at ✽.Then Should received description have Java.(GitHubJobsAPI.feature:52)&#10;"><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received description have Java..................................failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+We can't found [Java] in the description in Job number 2
+
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at com.gitHub.automation.steps.GitHubJobsAPIStepDef.shouldReceivedDescriptionHaveDescription(GitHubJobsAPIStepDef.java:82)
+	at ✽.Then Should received description have Java.(GitHubJobsAPI.feature:52)
+]]></failure>
+</testcase>
+<testcase classname="List of API Cases" name="Retrieve all Jobs using GET API contain Invalid Description To verify the result if it have the expected jobs" time="0.836265">
+<system-out><![CDATA[When Send the API call GET https://jobs.github.com/positions.json with query parameters.passed
+Then Should received description have hussein...............................passed
+]]></system-out>
+</testcase>
+</testsuite>
