@@ -25,7 +25,7 @@ Step 3
    
 •	IntelliJ IDEA : Tool to write our script, download IntelliJ IDEA.
 •	Clone our framework https://github.com/ through run the below command on terminal 
-                    git clone https://github.com/
+                    git clone https://github.com/Husaam98/Husam-API.git
 Note:If you do not have git installed on your machine, you can install it through click on this link here.
 
 Step 4
